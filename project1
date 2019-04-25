@@ -1,0 +1,18 @@
+a=('1' '2' '3' '4' '5' '6' '7' '8' '9' '10')
+b=[]
+
+for i in range(0,11,1):
+    b.insert(i,a[i])
+
+for i in range(0,9,1):
+    print(b[i])
+print(b[9],b[10])
+
+c=('i','love','you','do','you','love','me?')
+counts=dict()
+for x in c :
+    if x in counts:
+        counts[x]=counts[x]+1
+    else:
+        counts[x]=1
+print(counts)
